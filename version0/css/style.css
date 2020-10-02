@@ -1,0 +1,29 @@
+.nav-item  {
+    padding-right: 3rem;
+}
+
+
+nav {
+    border: solid;
+    
+}
+
+
+.bord{
+    border: solid;
+}
+
+.banner {
+    background-color: black;
+    height: 400px;
+}
+
+.text-banner {
+    text-align: center;
+    transform: translateY(120%);
+}
+
+.text-banner h1 {
+    font-size: 60px;
+    
+}
