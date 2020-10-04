@@ -28,9 +28,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Nom & Prénoms</th>
-                                                <th>Ville</th>
-                                                <th>Commune ou Quartier</th>
+                                                <th>Nom & Prénoms</th>                                               
                                                 <th>Numéro Téléphone</th>
                                                 <th>Adresse Email</th>
                                             </tr>
@@ -39,19 +37,15 @@
                                             <?php foreach($datas as $value) { ?>
                                             <tr>
                                                 <td><?= $value['id'] ?></td>
-                                                <td><?= $value['nom'] ?></td>
-                                                <td><?= $value['ville'] ?></td>
-                                                <td><?= $value['location'] ?></td>
-                                                <td><?= $value['numero'] ?></td>
+                                                <td><?= $value['name'] ?></td>                                                
+                                                <td><?= $value['number'] ?></td>
                                                 <td><?= $value['email'] ?></td>
                                             </tr>                    
                                             <?php } ?>                        
                                         </tbody>
                                         <tfoot>
                                                 <th></th>
-                                                <th>Nom & Prénoms</th>
-                                                <th>Ville</th>
-                                                <th>Commune ou Quartier</th>
+                                                <th>Nom & Prénoms</th>                                                
                                                 <th>Numéro Téléphone</th>
                                                 <th>Adresse Email</th>
                                         </tfoot>

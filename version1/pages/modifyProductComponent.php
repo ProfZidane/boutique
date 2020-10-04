@@ -63,7 +63,7 @@
                                             <?php foreach ($datas as $value ) { ?>
                                             <tr>
                                                 <td><?= $value['id']?></td>
-                                                <td><?= $value['nom']?></td>
+                                                <td><?= $value['name']?></td>
                                                 <td><?= $value['catg']?></td>
                                                 <td><?= $value['sous_catg']?></td>
                                                 <td><?= $value['prix']?></td>

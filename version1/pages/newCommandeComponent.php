@@ -38,11 +38,11 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Nom Produit</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
-                                                <th>Option</th>
+                                                <th>Option</th>                                                                                                
                                                 <th>Date</th>
+                                                <th></th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -53,21 +53,21 @@
                                                 <td><?= $value['1'] ?></td>
                                                 <td><?= $value['2'] ?></td>
                                                 <td><?= $value['3'] ?></td>
-                                                <td><?= $value['4'] ?></td>
-                                                <td><?= $value['5'] ?></td>                                                
+                                                <td><?= $value['4']?></td>
+                                                <td><a class="btn btn-warning" href="../traitment/getDetailOrders.php?num=<?=$value['1']?>">Détails</a></td>                                                                                
                                                 <td><a href="../traitment/updateCommande.php?id=<?=$value['0']?>" class="btn btn-primary">Mettre en attente</a></td>
                                             </tr> 
                                             <?php } ?>                                           
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th></th>
-                                                <th>Nom Produit</th>
+                                            <th>#</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
-                                                <th>Option</th>
+                                                <th>Option</th>                                                                                                
                                                 <th>Date</th>
                                                 <th></th>
+                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
                                     </table>

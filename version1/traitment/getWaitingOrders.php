@@ -24,7 +24,7 @@ foreach ($datas as $value) {
     $nom_client = $request->fetchAll();
 
     $id_produit = $value['idProduit'];
-    $request2 = $connexion->prepare("SELECT nom FROM produit WHERE id=$id_produit");
+    $request2 = $connexion->prepare("SELECT nom FROM produits WHERE id=$id_produit");
     $request2->execute();
     $nom_produit = $request2->fetchAll();
     

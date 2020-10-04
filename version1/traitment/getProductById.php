@@ -4,7 +4,7 @@ include('../config/db.php');
 
 $id = $_POST['id'];
 
-$query = "SELECT * FROM produit WHERE id=$id";
+$query = "SELECT * FROM produits WHERE id=$id";
 
 $req = $connexion->prepare($query);
 

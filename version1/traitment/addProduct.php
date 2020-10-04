@@ -19,9 +19,9 @@
 
    } else {
       
-        move_uploaded_file($_FILES["image"]["tmp_name"], "../../public/storage/product/" . $_FILES["image"]["name"]);
+        move_uploaded_file($_FILES["image"]["tmp_name"], "../public/storage/product/" . $_FILES["image"]["name"]);
     
-       $query = "INSERT INTO produit(nom,catg,sous_catg,prix,description,qte,img,created_at) VALUES ('$product_name','$catg','$sous_catg','$price','$description','$quantity','$image',NULL)";
+       $query = "INSERT INTO produits(name,catg,sous_catg,prix,description,qte,img,created_at) VALUES ('$product_name','$catg','$sous_catg','$price','$description','$quantity','$image',NULL)";
 
         $req = $connexion->prepare($query);
 

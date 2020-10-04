@@ -27,7 +27,7 @@ $price = 0;
 foreach ($datas2 as $value) {
     # code...
     $id_produit = $value['idProduit'];
-    $request2 = $connexion->prepare("SELECT prix FROM produit WHERE id=$id_produit");
+    $request2 = $connexion->prepare("SELECT prix FROM produits WHERE id=$id_produit");
     $request2->execute();
     $prix_produit = $request2->fetchAll();
 

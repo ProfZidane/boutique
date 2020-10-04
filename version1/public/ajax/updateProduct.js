@@ -26,7 +26,7 @@ ModifuButton.forEach(element => {
             data.forEach(element => {
                 //console.log(element);
                 HidId.value = element['id'];
-                NomInput.value = element['nom'];
+                NomInput.value = element['name'] + "d";
                 CatgInput.value = element['catg'];
                 SousCatgInput.value = element['sous_catg'];
                 //ImageInput.value = element['4'];

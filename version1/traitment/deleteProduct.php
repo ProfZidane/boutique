@@ -5,7 +5,7 @@ include('../config/db.php');
 $id = $_GET['id'];
 
 
-$query = "DELETE FROM produit WHERE id=$id ";
+$query = "DELETE FROM produits WHERE id=$id ";
 
 $req = $connexion->prepare($query);
 

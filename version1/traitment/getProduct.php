@@ -2,7 +2,7 @@
 
 include('../config/db.php');
 
-$query = "SELECT * FROM produit";
+$query = "SELECT * FROM produits";
 
 $req = $connexion->prepare($query);
 

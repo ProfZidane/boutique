@@ -14,11 +14,11 @@ $image = $_FILES['image']['name'];
 
 if (empty($image)) {
 
-    $query = "UPDATE produit SET nom='$product_name',catg='$catg',sous_catg='$sous_catg',prix='$price',description='$description',qte='$quantity' WHERE id = $id";    
+    $query = "UPDATE produits SET name='$product_name',catg='$catg',sous_catg='$sous_catg',prix='$price',description='$description',qte='$quantity' WHERE id = $id";    
 
 } else {
 
-    $query = "UPDATE produit SET nom='$product_name',catg='$catg',sous_catg='$sous_catg',prix='$price',description='$description',qte='$quantity',img='$image' WHERE id = $id";
+    $query = "UPDATE produits SET name='$product_name',catg='$catg',sous_catg='$sous_catg',prix='$price',description='$description',qte='$quantity',img='$image' WHERE id = $id";
 
 }
 
