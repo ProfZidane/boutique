@@ -1,6 +1,6 @@
 const Cart = document.querySelectorAll('.putInCart');
 const Livraison = document.getElementById('exampleRadios1');
-const PointRelai = document.getElementBy('exampleRadios2');
+const PointRelai = document.getElementById('exampleRadios2');
 
 Cart.forEach(element => {
     element.addEventListener('click', ()=> {
@@ -19,3 +19,13 @@ Cart.forEach(element => {
         //)
     });
 });
+
+Livraison.addEventListener('click', ()=> {
+    document.getElementById('liv').style.display = "block";
+    document.getElementById('pr').style.display = "none";
+});
+
+PointRelai.addEventListener('click', ()=> {
+    //document.getElementById('pr').style.display = "block";
+    document.getElementById('liv').style.display = "none";
+})

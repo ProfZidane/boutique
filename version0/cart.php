@@ -3,6 +3,13 @@
 <?php include('includes/banner.php') ?>
 
 <?php include('back/config/db.php') ?>
+<?php
+
+if (isset($_GET["del"])) {
+    unset($_SESSION['panier'][$_GET["del"]]);
+}
+
+?>
 <?php  
 
     $ttc = 0;
@@ -24,9 +31,7 @@
 ?>
 <div class="container-fluid bord">
 <?php 
-    if (isset($_GET["del"])) {
-        unset($_SESSION['panier'][$_GET["del"]]);
-    }
+   
     if (isset($_GET["moins"])) {
         if ($_SESSION['panier'][$_GET["moins"]] != 0) {
             # code...
@@ -75,25 +80,24 @@
                 <h3><?= $ttc ?> FCFA</h3>
             </div>
         </div>
-        <div class="row">
-            <form action="" method="post">
+        <div class="row bord">
+            <form action="back/sales/validation.php" method="post">
             <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="lvr_radio" id="exampleRadios1" value="livraison" >
             <label class="form-check-label" for="exampleRadios1">
                 Livraison
             </label>            
-            <input type="text" name="livraison" id="liv" style="display: none;">
+            <input type="text" name="livraison" placeholder="entrer le lieu de livraison" id="liv" style="display: none;">
             </div>            
             <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <input class="form-check-input" type="radio" name="pv_radio" id="exampleRadios2" value="point_relais">
             <label class="form-check-label" for="exampleRadios2">
                 Point de vente
-            </label>
-            <input type="text" name="point_relais" id="pr" style="display: none;">
+            </label>            
             </div>
-
+            <button class="btn btn-primary btn-block" type="submit">Valider</button>
             </form>
-            <button class="btn btn-primary btn-block">Valider</button>
+            
         </div>
     </div>
 
