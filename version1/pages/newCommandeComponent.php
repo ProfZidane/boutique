@@ -54,7 +54,7 @@
                                                 <td><?= $value['2'] ?></td>
                                                 <td><?= $value['3'] ?></td>
                                                 <td><?= $value['4']?></td>
-                                                <td><a class="btn btn-warning" href="../traitment/getDetailOrders.php?num=<?=$value['1']?>">Détails</a></td>                                                                                
+                                                <td><a class="btn btn-warning AboutButton" data-toggle="modal" data-target="#exampleModalDetail" data-num="<?=$value['1']?>">Détails</a></td>                                                                                
                                                 <td><a href="../traitment/updateCommande.php?id=<?=$value['0']?>" class="btn btn-primary">Mettre en attente</a></td>
                                             </tr> 
                                             <?php } ?>                                           
@@ -81,9 +81,9 @@
 </div>
 
 
+<?php include('modals/detailProductModal.php') ?>
 
-
-
+<script src="../public/ajax/detailProduct.js"></script>
 
 
     <!-- end of main -->

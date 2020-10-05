@@ -17,7 +17,7 @@ $data = [];
 
 //print_r($detail);
 foreach($detail as $value) {    
-    print_r($value);
+    //print_r($value);
     echo '<br>';
     $id_produit = $value['idProduit'];
     //echo $id_produit;
@@ -25,11 +25,13 @@ foreach($detail as $value) {
     $produit = $connexion->prepare($query2);
     $produit->execute();
     $produits = $produit->fetchAll();
-    print_r($produits);
+    //print_r($produits);
     $prix = $value['prix'];
     $quantite = $value['qte'];
-    array_push($data, [$produits['name'],$produits['catg'],$produits['sous_catg'],$produits['img'],$prix,$quantite]);
+    array_push($data, [$produits[0]['name'],$produits[0]['catg'],$produits[0]['sous_catg'],$produits[0]['img'],$prix,$quantite]);
 }
 
-print_r($data);
+//print_r($data);
+$data = json_encode($data);
+echo $data;
 ?>
