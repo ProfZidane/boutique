@@ -9,7 +9,7 @@
                     
                     <span class="flex-grow-1"></span>
                     <div class="d-flex align-items-center">
-                        <img class="logo" src="views/public/dist-assets/images/logo.png" alt="">
+                        <img class="logo" src="../public/dist-assets/images/logo2.jpeg" alt="">
                         <div>
                             <p class="m-0">&copy; 2020 LCE</p>
                             <p class="m-0">All rights reserved</p>
@@ -22,7 +22,7 @@
     </div><!-- ============ Search UI Start ============= -->
     <div class="search-ui">
         <div class="search-header">
-            <img src="../../dist-assets/images/logo.png" alt="" class="logo">
+            <img src="../../dist-assets/images/logo.png]" alt="" class="logo">
             <button class="search-close btn btn-icon bg-transparent float-right mt-2">
                 <i class="i-Close-Window text-22 text-muted"></i>
             </button>

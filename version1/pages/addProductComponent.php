@@ -102,7 +102,7 @@
                                             </select>
                                         </div>-->
                                         <div class="col-md-12">
-                                            <button class="btn btn-primary" type="submit" name="submit">Valider</button>
+                                            <button class="btn" type="submit" name="submit" style="background-color: #FF6833"> Valider</button>
                                         </div>
                                     </div>
                                 </form>

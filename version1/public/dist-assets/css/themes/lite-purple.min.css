@@ -157,12 +157,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #663399;
+  color: #ec5d0a;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #402060;
+    color: #ca5303;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -204,7 +204,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #70657b;
+  color: #7b7265;
   text-align: left;
   caption-side: bottom; }
 
@@ -3279,7 +3279,7 @@ input[type="button"].btn-block {
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
-    color: #70657b; }
+    color: #d17b19; }
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
@@ -3292,12 +3292,12 @@ input[type="button"].btn-block {
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
       border-color: #eee #eee #dee2e6; }
     .nav-tabs .nav-link.disabled {
-      color: #70657b;
+      color: #a37035;
       background-color: transparent;
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #665c70;
+    color: #da6e16;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
@@ -7099,7 +7099,7 @@ button.bg-gray-900:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #663399 !important; }
+  color: #ec650b !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #4d2673 !important; }
@@ -16341,7 +16341,7 @@ a.typo_link.text-gray-900:after {
     .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item {
       display: block; }
       .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a {
-        color: #332e38;
+        color: #e27209;
         text-transform: capitalize;
         display: flex;
         align-items: center;
@@ -16352,7 +16352,7 @@ a.typo_link.text-gray-900:after {
         .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a:hover {
           background: #eee; }
         .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a.open {
-          color: #663399;
+          color: #995333;
           background: #eee; }
         .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a .nav-icon {
           font-size: 18px;
@@ -16624,7 +16624,7 @@ a.typo_link.text-gray-900:after {
       position: relative;
       display: block;
       width: 100%;
-      color: #332e38;
+      color: #38342e;
       cursor: pointer;
       border-bottom: 1px solid #dee2e6; }
       .layout-sidebar-large .sidebar-left .navigation-left .nav-item:focus, .layout-sidebar-large .sidebar-left .navigation-left .nav-item:active {
@@ -16632,9 +16632,9 @@ a.typo_link.text-gray-900:after {
       .layout-sidebar-large .sidebar-left .navigation-left .nav-item.lvl1 {
         text-align: center; }
       .layout-sidebar-large .sidebar-left .navigation-left .nav-item.active {
-        color: #663399; }
+        color: #996d33; }
         .layout-sidebar-large .sidebar-left .navigation-left .nav-item.active .nav-item-hold {
-          color: #663399; }
+          color: #996133; }
       .layout-sidebar-large .sidebar-left .navigation-left .nav-item .nav-item-hold {
         display: block;
         width: 100%;
@@ -16654,7 +16654,7 @@ a.typo_link.text-gray-900:after {
           display: block;
           font-weight: 400; }
         .layout-sidebar-large .sidebar-left .navigation-left .nav-item .nav-item-hold a {
-          color: #332e38; }
+          color: #c56a0e; }
       .layout-sidebar-large .sidebar-left .navigation-left .nav-item.active .triangle {
         position: absolute;
         width: 0;
@@ -16683,7 +16683,7 @@ a.typo_link.text-gray-900:after {
     .layout-sidebar-large .sidebar-left-secondary .childNav li.nav-item {
       display: block; }
       .layout-sidebar-large .sidebar-left-secondary .childNav li.nav-item a {
-        color: #332e38;
+        color: #c56a0e;
         text-transform: capitalize;
         display: flex;
         align-items: center;
@@ -16694,7 +16694,7 @@ a.typo_link.text-gray-900:after {
         .layout-sidebar-large .sidebar-left-secondary .childNav li.nav-item a:hover {
           background: #eee; }
         .layout-sidebar-large .sidebar-left-secondary .childNav li.nav-item a.open {
-          color: #663399; }
+          color: #c56a0e; }
         .layout-sidebar-large .sidebar-left-secondary .childNav li.nav-item a .nav-icon {
           font-size: 18px;
           margin-right: 8px;

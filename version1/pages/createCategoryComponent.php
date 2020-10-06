@@ -40,7 +40,7 @@
                                             </select>
                                         </div>                                                                                                                                                 
                                         <div class="col-md-12">
-                                            <button class="btn btn-primary" type="submit">Valider</button>
+                                            <button class="btn" type="submit" style="background-color: #FF6833">Valider</button>
                                         </div>
                                     </div>
                                 </form>
@@ -71,7 +71,7 @@
                                             </select>
                                         </div>                                                                                                                                                   
                                         <div class="col-md-12">
-                                            <button class="btn btn-primary" type="submit">Valider</button>
+                                            <button class="btn" type="submit" style="background-color: #FF6833">Valider</button>
                                         </div>
                                     </div>
                                 </form>

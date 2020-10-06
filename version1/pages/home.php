@@ -24,7 +24,7 @@
                             <div class="card-body text-center"><i class="i-Add-User"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Membres</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"><?= $count_datas ?></p>
+                                    <p class=" text-24 line-height-1 mb-2" style="color: #FF6833"><?= $count_datas ?></p>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                             <div class="card-body text-center"><i class="i-Financial"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Ventes</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2" style="width:200%"><?= $price ?> <span style="font-size: small;">FCFA</span></p>
+                                    <p class="text-24 line-height-1 mb-2" style="width:200%;color: #FF6833"><?= $price ?> <span style="font-size: small;">FCFA</span></p>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <div class="card-body text-center"><i class="i-Checkout-Basket"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Commandes</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"><?= $count_datas1 ?></p>
+                                    <p class="text-24 line-height-1 mb-2" style="color: #FF6833"><?= $count_datas1 ?></p>
                                 </div>
                             </div>
                         </div>

@@ -13,11 +13,17 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"/>
 </head>
 
+<style>
+    .nav-item-hold:hover {
+        color : transparent;
+    }
+</style>
+
 <body class="text-left">
     <div class="app-admin-wrap layout-sidebar-large">
         <div class="main-header">
             <div class="logo">
-                <img src="../public/dist-assets/images/logo.png" alt="">
+                <img src="../public/dist-assets/images/logo2.jpeg" alt="">
             </div>
             <div class="menu-toggle">
                 <div></div>
@@ -179,37 +185,37 @@
             <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
                 <ul class="navigation-left">
                     <li class="nav-item" data-item=""><a class="nav-item-hold" href="home.php"><i class="nav-icon i-Shop-4"></i><span class="nav-text">Accueil</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item="uikits"><a class="nav-item-hold" href="#"><i class="nav-icon i-Library"></i><span class="nav-text">Produits</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item="extrakits"><a class="nav-item-hold" href="#"><i class="nav-icon i-Suitcase"></i><span class="nav-text">Commandes</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item=""><a class="nav-item-hold" href="saleComponent.php"><i class="nav-icon i-File-Clipboard-File--Text"></i><span class="nav-text">Ventes</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item=""><a class="nav-item-hold" href="customerComponent.php"><i class="nav-icon i-Computer-Secure"></i><span class="nav-text">Clients</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item="widgets"><a class="nav-item-hold" href="#"><i class="nav-icon i-Bar-Chart"></i><span class="nav-text">Statistiques</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item=""><a class="nav-item-hold" href="addUserComponent.php"><i class="nav-icon i-Administrator"></i><span class="nav-text">Nouveau administrateur</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>                    
                    <!-- <li class="nav-item"><a class="nav-item-hold" href="datatables.html"><i class="nav-icon i-File-Horizontal-Text"></i><span class="nav-text">Datatables</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item" data-item="sessions"><a class="nav-item-hold" href="#"><i class="nav-icon i-Administrator"></i><span class="nav-text">Sessions</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item active" data-item="others"><a class="nav-item-hold" href="#"><i class="nav-icon i-Double-Tap"></i><span class="nav-text">Others</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>
                     <li class="nav-item"><a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank"><i class="nav-icon i-Safe-Box1"></i><span class="nav-text">Doc</span></a>
-                        <div class="triangle"></div>
+                       
                     </li>-->
                 </ul>
             </div>
