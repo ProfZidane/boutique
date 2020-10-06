@@ -3,8 +3,8 @@
 include('../config/db.php');
 
 $query = "SELECT * FROM user";
-$query1 = "SELECT * FROM commande WHERE niveau=0 OR niveau=1";
-$query2 = "SELECT * FROM commande WHERE niveau=2 AND statue='valider'";
+$query1 = "SELECT * FROM commandes WHERE niveau=0 OR niveau=1";
+$query2 = "SELECT * FROM commandes WHERE niveau=2 AND statue='valider'";
 
 $req = $connexion->prepare($query);
 $req1 = $connexion->prepare($query1);
@@ -24,14 +24,20 @@ $count_datas = count($datas);
 $count_datas1 = count($datas1);
 $price = 0;
 
+//print_r($datas2);
+
+
 foreach ($datas2 as $value) {
     # code...
-    $id_produit = $value['idProduit'];
-    $request2 = $connexion->prepare("SELECT prix FROM produits WHERE id=$id_produit");
+    $numCmd = $value['numCmd'];
+    $request2 = $connexion->prepare("SELECT prix,qte FROM commander WHERE numCmd='$numCmd'");
     $request2->execute();
     $prix_produit = $request2->fetchAll();
-
-    $price = $price + (intval($prix_produit[0][0]) * intval($value['qte']));
+    foreach($prix_produit as $produit) {
+        $price += intval($produit['prix'] * $produit['qte']);
+    }
+    //echo $prix_produit['prix'] . " " . $prix_produit['qte'];
+    //$price = $price + (intval($prix_produit[0][0]) * intval($value['qte']));
 }
 
 

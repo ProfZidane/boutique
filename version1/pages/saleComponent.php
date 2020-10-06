@@ -28,12 +28,12 @@
                                         <thead>
                                             <tr>
                                             <th>#</th>
-                                                <th>Nom Produit</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
                                                 <th>Option</th>
+                                                <th>Date Commande</th>                                                
                                                 <th>Date Vente</th>    
-                                                <th>Total Prix</th>                                            
+                                                <th></th>                                            
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -45,19 +45,19 @@
                                                 <td><?= $value['3'] ?></td>
                                                 <td><?= $value['4'] ?></td>
                                                 <td><?= $value['5'] ?></td> 
-                                                <td><?= $value['6'] ?></td>
+                                                <td><a class="btn btn-warning AboutButton" data-toggle="modal" data-target="#exampleModalDetail" data-num="<?=$value['1']?>">Détails</a></td>                                                                                
                                             </tr>
                                             <?php } ?>                                            
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th></th>
-                                                <th>Nom Produit</th>
+                                            <th>#</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
                                                 <th>Option</th>
-                                                <th>Date Vente</th> 
-                                                <th>Total Prix</th>                                            
+                                                <th>Date Commande</th>                                                
+                                                <th>Date Vente</th>    
+                                                <th></th>                                            
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -71,7 +71,9 @@
 </div>
 
 
+<?php include('modals/detailProductModal2.php') ?>                                            
 
+<script src="../public/ajax/detailProduct2.js"></script>                                           
 
 
 

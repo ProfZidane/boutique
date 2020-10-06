@@ -2,7 +2,7 @@
 
 include('../config/db.php');
 
-$query = "SELECT * FROM commande WHERE niveau=2 AND statue='valider'";
+$query = "SELECT * FROM commandes WHERE niveau=2 AND statue='valider'";
 
 $req = $connexion->prepare($query);
 
@@ -17,20 +17,12 @@ $data = [];
 
 foreach ($datas as $value) {
     # code...    
-    //print_r($value);
     $id_client = $value['idClient'];
-    $request = $connexion->prepare("SELECT nom FROM client WHERE id=$id_client");
+    $request = $connexion->prepare("SELECT name FROM client WHERE id=$id_client");  
     $request->execute();
-    $nom_client = $request->fetchAll();
-
-    $id_produit = $value['idProduit'];
-    $request2 = $connexion->prepare("SELECT nom,prix FROM produit WHERE id=$id_produit");
-    $request2->execute();
-    $nom_produit = $request2->fetchAll();
-    
-    $price = intval($nom_produit[0][1]) * intval($value['qte']);
-    array_push($data, [$value['id'],$nom_produit[0][0],$nom_client[0][0],$value['qte'],$value['optionPay'],$value['update_at'],$price ]);
-
+    $client = $request->fetchAll();
+    //print_r($value['id']);
+    array_push($data, [$value['id'],$value["numCmd"],$client[0]['name'],$value['optionCmd'],$value['created_at'],$value['updated_at'] ]);
 }
 
 
