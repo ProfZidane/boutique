@@ -3,27 +3,31 @@
 }
 
 
-nav {
-    border: solid;
-    
-}
-
 
 .bord{
     border: solid;
 }
 
 .banner {
-    background-color: black;
-    height: 400px;
+    background-color: rgb(212, 134, 71);
+    height: 450px;
 }
 
 .text-banner {
     text-align: center;
-    transform: translateY(120%);
+    color: white;
+    transform: translateY(100%);
 }
 
 .text-banner h1 {
     font-size: 60px;
     
+}
+
+.login-contain {
+
+    width: 40%;
+    padding: 2rem;
+    transform: translateY(30%);
+    box-shadow: 4px 4px 8px rgba(170, 170, 170, 0.589);
 }

@@ -12,19 +12,19 @@
 <body>
 
 <!-- nav bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light " style="margin-left:4rem">
   <a class="navbar-brand" href="#">LOCO-BOUTIQUE</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse offset-md-4" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse offset-md-5" id="navbarSupportedContent">
     
   <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
+      <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Catégories
         </a>
@@ -32,7 +32,7 @@
           <a class="dropdown-item" href="#">Décodeurs</a>
           <a class="dropdown-item" href="#">équipements réseaux</a>          
         </div>
-      </li> 
+      </li> -->
                
       <?php if (isset($_SESSION['nom'])) { ?>        
         <li class="nav-item dropdown">
@@ -65,7 +65,7 @@
       <?php } ?>
       
       <li class="nav-item">
-        <a href="" class="nav-item">
+        <a class="nav-item">
           <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
         </a>
       </li>
