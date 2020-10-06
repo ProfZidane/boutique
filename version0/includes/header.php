@@ -13,7 +13,7 @@
 
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">LOCO-BOUTIQUE</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -63,18 +63,12 @@
             </a>        
         </li>
       <?php } ?>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="cart.php">
-          <?php if (isset($_SESSION['panier'])) { ?>
-            <i class="material-icons">shopping_cart</i>(<span id="count_cart"><?= count($_SESSION['panier']) ?></span>)
-        </a>       
-          <?php } else { ?>
-            <a class="nav-link" >
-            <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
-        </a>       
-          <?php } ?>
+      
+      <li class="nav-item">
+        <a href="" class="nav-item">
+          <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
+        </a>
       </li>
-
       
     </ul>
     
