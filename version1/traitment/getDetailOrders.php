@@ -4,7 +4,7 @@ session_start();
 
 include('../config/db.php');
 
-$num_cmd = $_GET['num'];
+$num_cmd = $_POST['numCmd'];
 //echo $num_cmd;
 $query = "SELECT * FROM commander WHERE numCmd ='$num_cmd'";
 
@@ -18,7 +18,7 @@ $data = [];
 //print_r($detail);
 foreach($detail as $value) {    
     //print_r($value);
-    echo '<br>';
+    //echo '<br>';
     $id_produit = $value['idProduit'];
     //echo $id_produit;
     $query2 = "SELECT name,catg,sous_catg,img FROM produits WHERE id='$id_produit'";
@@ -32,6 +32,6 @@ foreach($detail as $value) {
 }
 
 //print_r($data);
-$data = json_encode($data);
-echo $data;
+echo json_encode($data);
+//echo $data;
 ?>

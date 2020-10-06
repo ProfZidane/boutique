@@ -10,7 +10,7 @@ $init = $_SESSION['id'];
 
 $today = date("Y-m-d H:i:s");
 
-$query = "UPDATE commande SET finalizer='$init',niveau=2,statue='valider',update_at='$today' WHERE id = $id";
+$query = "UPDATE commandes SET finalizer='$init',niveau=2,statue='valider',updated_at='$today' WHERE id = $id";
 
 $req = $connexion->prepare($query);
 

@@ -7,7 +7,7 @@ include('../config/db.php');
 $id = $_GET['id'];
 $init = $_SESSION['id'];
 
-$query = "UPDATE commande SET initiator='$init',niveau=1,statue='en attente' WHERE id = $id";
+$query = "UPDATE commandes SET initator='$init',niveau=1,statue='en attente' WHERE id = $id";
 
 $req = $connexion->prepare($query);
 

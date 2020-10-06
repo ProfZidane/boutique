@@ -37,11 +37,11 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Nom Produit</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
                                                 <th>Option</th>
                                                 <th>Date</th>
+                                                <th></th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -53,19 +53,19 @@
                                                 <td><?= $value['2']; ?></td>
                                                 <td><?= $value['3']; ?></td>
                                                 <td><?= $value['4']; ?></td>
-                                                <td><?= $value['5']; ?></td>                                                
+                                                <td><a class="btn btn-warning AboutButton" data-toggle="modal" data-target="#exampleModalDetail" data-num="<?=$value['1']?>">Détails</a></td>                                                                                
                                                 <td><a href="../traitment/finalizeOrders.php?id=<?=$value['0']?>" class="btn btn-primary">Finaliser</a></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th>#</th>
-                                                <th>Nom Produit</th>
+                                            <th>#</th>
+                                                <th>Numéro Commande</th>
                                                 <th>Nom Client</th>
-                                                <th>Quantité</th>
                                                 <th>Option</th>
                                                 <th>Date</th>
+                                                <th></th>
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot>
@@ -80,7 +80,9 @@
 </div>
 
 
+    <?php include('modals/detailProductModal2.php') ?>                                            
 
+    <script src="../public/ajax/detailProduct2.js"></script>
 
 
 
