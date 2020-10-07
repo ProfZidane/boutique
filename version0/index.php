@@ -40,7 +40,7 @@
                     </div>
                 <?php } ?>
                 <br>
-                        <button class="btn text-light" style="background-color:orangered;" type="submit" name="submit2">OK</button>
+                        <button class="btn text-light" style="background-color:#FF6833;" type="submit" name="submit2">OK</button>
                     </form>
             </div>
             <hr>
@@ -52,7 +52,7 @@
             <p>Prix (FCFA): <span id="demo"></span></p>
             </div>
                 <br>
-                        <button class="btn text-light" style="background-color:orangered;" type="submit" name="submit3">OK</button>
+                        <button class="btn text-light" style="background-color:#FF6833;" type="submit" name="submit3">OK</button>
                     </form>
             </div>
             
@@ -67,9 +67,9 @@
                         <img src="../version1/public/storage/product/<?=$value['img']?>" height="200" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?=$value['name']?></h5>
-                            <p class="card-text"><?=$value['description']?>.</p>
+                            <!--<p class="card-text"><?=$value['description']?>.</p>-->
                             <p class="card-text"><strong><?= $value['prix']?> FCFA</strong></p>
-                            <a class="btn text-light putInCart" id="<?= $value['id']?>" style="background-color:orangered;">Ajouter &nbsp;<i class="material-icons" style="font-size: 1rem;">add_shopping_cart</i></a>
+                            <a class="btn text-light putInCart" id="<?= $value['id']?>" style="background-color:#FF6833;">Ajouter &nbsp;<i class="material-icons" style="font-size: 1rem;">add_shopping_cart</i></a>
                         </div>
                     </div>
                 </div>

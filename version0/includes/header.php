@@ -14,7 +14,10 @@
 <div class="container">
   <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light " style="margin-left:4rem">
-  <a class="navbar-brand" href="#">LOCO-BOUTIQUE</a>
+  <a class="navbar-brand" href="index.php">
+    <img src="logo2.jpeg" width="50" alt="">
+    <span style="color: #FF6833">LOCO-</span><span class="text-warning">BOUTIQUE</span>
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,15 +41,15 @@
     <?php if(isset($_SESSION['panier'])) { ?>
       
       <li class="nav-item">
-        <a class="nav-item" href="cart.php">
-          Panier <i class="material-icons">shopping_cart</i>(<span id="count_cart"><?= count($_SESSION["panier"])?></span>)
+        <a class="nav-item" href="cart.php" style="color:#FF6833">
+          Panier <i class="material-icons" style="position:relative;top:5px;color:#FF6833">shopping_cart</i><span style="color:#FF6833" id="count_cart"><?= count($_SESSION["panier"])?></span>
         </a>
       </li>
       
     <?php } else { ?>
-      <li class="nav-item">
-        Panier <a class="nav-item" href="cart.php">
-          <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
+      <li class="nav-item" >
+        Panier &nbsp;<a class="nav-item" href="cart.php">
+          <i class="material-icons" style="position:relative;top:5px;color:#FF6833">shopping_cart</i><span style="color:#FF6833" id="count_cart">0</span>
         </a>
       </li>
     <?php } ?>
