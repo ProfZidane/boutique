@@ -2,6 +2,8 @@ const Cart = document.querySelectorAll('.putInCart');
 const Livraison = document.getElementById('exampleRadios1');
 const PointRelai = document.getElementById('exampleRadios2');
 
+const OptionRecv = document.getElementById('Option');
+
 Cart.forEach(element => {
     element.addEventListener('click', ()=> {
         alert('Ajouter au panier');
@@ -19,7 +21,7 @@ Cart.forEach(element => {
         //)
     });
 });
-
+ /*
 Livraison.addEventListener('click', ()=> {
     document.getElementById('liv').style.display = "block";
     document.getElementById('pr').style.display = "none";
@@ -28,4 +30,13 @@ Livraison.addEventListener('click', ()=> {
 PointRelai.addEventListener('click', ()=> {
     //document.getElementById('pr').style.display = "block";
     document.getElementById('liv').style.display = "none";
+})
+*/
+OptionRecv.addEventListener('change', ()=> {
+    console.log(OptionRecv.value);
+    if (OptionRecv.value == "Livraison") {
+        document.getElementById('liv').style.display = "block";
+    } else {
+        document.getElementById('liv').style.display = "none";
+    }
 })

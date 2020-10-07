@@ -16,7 +16,7 @@
 .text-banner {
     text-align: center;
     color: white;
-    transform: translateY(100%);
+    transform: translateY(160%);
 }
 
 .text-banner h1 {
@@ -26,8 +26,12 @@
 
 .login-contain {
 
-    width: 40%;
-    padding: 2rem;
+    width: 30%;
+    padding: 3rem;
     transform: translateY(30%);
     box-shadow: 4px 4px 8px rgba(170, 170, 170, 0.589);
+}
+
+.myDIv {
+    height: 100vh;
 }

@@ -3,7 +3,7 @@
     
 $serveur ="localhost";
 $login ="root";
-$pass="root";
+$pass="";
 $db_name="boutique";
  
  try{

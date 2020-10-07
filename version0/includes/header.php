@@ -11,7 +11,8 @@
 <?php session_start() ?>
 <body>
 
-<!-- nav bar -->
+<div class="container">
+  <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light " style="margin-left:4rem">
   <a class="navbar-brand" href="#">LOCO-BOUTIQUE</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,42 +35,21 @@
         </div>
       </li> -->
                
-      <?php if (isset($_SESSION['nom'])) { ?>        
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <?= $_SESSION['nom'] ?>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-          <a class="dropdown-item" href="#">Déconnexion</a>         
-          <a class="dropdown-item" href="#">Déconnexion</a>         
-        </div>
-      </li>   
-      <li class="nav-item dropdown">
-        <form action="back/account/logout.php" method="post">
-          <button class="nav-link btn btn-light" type="submit">
-              Déconnexion
-          </button>        
-        </form>
-      </li>       
-      <?php } else { ?>        
-      <li class="nav-item dropdown">
-            <a class="nav-link" href="register.php">
-                Inscription
-            </a>        
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="signIn.php">
-                Connexion
-            </a>        
-        </li>
-      <?php } ?>
+    <?php if(isset($_SESSION['panier'])) { ?>
       
       <li class="nav-item">
-        <a class="nav-item">
-          <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
+        <a class="nav-item" href="cart.php">
+          Panier <i class="material-icons">shopping_cart</i>(<span id="count_cart"><?= count($_SESSION["panier"])?></span>)
         </a>
       </li>
       
+    <?php } else { ?>
+      <li class="nav-item">
+        Panier <a class="nav-item" href="cart.php">
+          <i class="material-icons">shopping_cart</i>(<span id="count_cart">0</span>)
+        </a>
+      </li>
+    <?php } ?>
     </ul>
     
   </div>
@@ -78,3 +58,5 @@
 
 
 
+
+</div>
